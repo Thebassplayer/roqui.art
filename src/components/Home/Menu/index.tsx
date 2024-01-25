@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeMenuButtons = [
   {
-    title: "obras terminadas",
+    title: "Obras Terminadas",
     link: "/obras",
   },
   {
