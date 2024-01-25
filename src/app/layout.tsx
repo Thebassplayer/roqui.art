@@ -1,9 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins, Pangolin } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { cx } from "@/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const pangolin = Pangolin({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pan",
+});
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pop",
+});
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-in",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +34,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={cx(
+          pangolin.variable,
+          poppins.variable,
+          inter.variable,
+          "font-in bg-light dark:bg-dark",
+        )}
+      >
         <Header />
         {children}
       </body>

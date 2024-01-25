@@ -17,7 +17,8 @@ module.exports = {
         lightBlue: "#B3CCDF",
       },
       fontFamily: {
-        mr: ["var(--font-mr)"],
+        pan: ["var(--font-pan)"],
+        pop: ["var(--font-pop)"],
         in: ["var(--font-in)"],
       },
       animation: {
