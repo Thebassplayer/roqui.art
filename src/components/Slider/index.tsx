@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import SliderImage from "./SliderImage";
 
 interface SliderProps {
   velocity?: number;
@@ -41,18 +42,18 @@ const Slider: React.FC<SliderProps> = ({ velocity = 2000 }) => {
 
   return (
     <div
-      className="h-[500px] w-full overflow-hidden flex flex-nowrap text-center"
+      className="flex h-[600px] w-full flex-nowrap overflow-hidden text-center"
       id="slider"
       ref={sliderRef}
     >
-      <div className="bg-blue-600 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-        <h2 className="text-4xl max-w-md">ROQI</h2>
+      <div className="flex w-full flex-none flex-col items-center justify-center space-y-4 bg-blue-600 text-white">
+        <h2 className="max-w-md text-4xl">ROQI</h2>
       </div>
-      <div className="bg-pink-400 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-        <h2 className="text-4xl max-w-md">ART</h2>
+      <div className="flex w-full flex-none flex-col items-center justify-center space-y-4 bg-pink-400 text-white">
+        <h2 className="max-w-md text-4xl">ART</h2>
       </div>
-      <div className="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-        <h2 className="text-4xl max-w-md">SPACE</h2>
+      <div className="flex w-full flex-none flex-col items-center justify-center space-y-4">
+        <SliderImage />
       </div>
     </div>
   );
