@@ -1,3 +1,4 @@
+import { InstagramIcon, PinterestIcon } from "@/assets/Icons";
 import React from "react";
 
 const Footer = () => {
@@ -29,7 +30,16 @@ const Footer = () => {
         </ul>
       </div>
       <div className="col-span-2 flex flex-col items-center justify-center text-light">
-        <h2 className="font-medium">Seguime en mis Redes</h2>
+        <h2 className="mb-8 font-medium">Seguime en mis Redes</h2>
+        <ul className="flex flex-col">
+          <li>
+            <div className="my-3 flex justify-evenly gap-2">
+              <PinterestIcon />
+              <InstagramIcon />
+            </div>
+          </li>
+          <li className="my-3">rominagquiroga@gmail.com</li>
+        </ul>
       </div>
     </footer>
   );
