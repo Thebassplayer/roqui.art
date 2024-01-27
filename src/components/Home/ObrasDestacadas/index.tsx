@@ -24,7 +24,7 @@ const ObrasDestacadasImages: Obra[] = [
 
 const ObrasDestacadas = () => {
   return (
-    <section className="h-[75vh] w-full">
+    <section className="w-full">
       <h1 className="text-center uppercase md:py-10">Destacadas</h1>
       <div className="grid h-full w-full grid-cols-3 justify-evenly">
         {ObrasDestacadasImages.map((image) => {
