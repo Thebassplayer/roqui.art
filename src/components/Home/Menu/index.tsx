@@ -25,7 +25,7 @@ const HomeMenuButtons = [
 
 const HomeMenu = () => {
   return (
-    <div className="w-full flex flex-row justify-evenly">
+    <div className="flex w-full flex-row justify-evenly">
       {HomeMenuButtons.map((button, index) => {
         return (
           <button key={index} className="p-6 uppercase">
