@@ -40,7 +40,7 @@ export default function RootLayout({
           pangolin.variable,
           poppins.variable,
           inter.variable,
-          "font-in bg-light dark:bg-dark h-screen w-screen grid grid-rows-[auto,1fr,auto]",
+          "relative grid w-screen grid-rows-[auto,1fr,auto] bg-light font-in dark:bg-dark",
         )}
       >
         <Header />
