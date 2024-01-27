@@ -1,12 +1,16 @@
 "use client";
 import { CldImage } from "next-cloudinary";
 
-const SliderImage = () => {
+type SliderImageProps = {
+  PublicId: string;
+};
+
+const SliderImage = ({ PublicId }: SliderImageProps) => {
   return (
     <CldImage
       width="600"
       height="600"
-      src="roqui_art/artworks/featured_artworks/tol0dz87hsycbhh50dca"
+      src={PublicId}
       alt="Roy and Raul"
       crop="pad"
       sizes="100vw"
