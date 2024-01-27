@@ -1,13 +1,14 @@
 import { InstagramIcon, PinterestIcon } from "@/assets/Icons";
 import React from "react";
 import Newsletter from "./Newsletter";
+import RoquiArtLogo from "../Header/RoquiArtLogo";
 
 const Footer = () => {
   return (
     <footer className="pt-12">
       <Newsletter />
       <menu className="grid grid-cols-5 items-start bg-dark px-6 py-12">
-        <div className="col-span-1 flex flex-col items-center justify-center text-light">
+        <div className="col-span-1 mx-auto flex flex-col items-start justify-center text-light">
           <h2 className="mb-8 font-medium">Categorias</h2>
           <ul>
             <li className="my-3">Obras Terminadas</li>
@@ -16,7 +17,7 @@ const Footer = () => {
             <li className="my-3">Productos Disponibles</li>
           </ul>
         </div>
-        <div className="col-span-1 flex flex-col items-center justify-center text-light">
+        <div className="col-span-1 mx-auto flex flex-col items-start justify-center text-light">
           <h2 className="mb-8 font-medium">Ayuda</h2>
           <ul>
             <li className="my-3">Como Comprar</li>
@@ -25,7 +26,7 @@ const Footer = () => {
             <li className="my-3">Medios de Pago</li>
           </ul>
         </div>
-        <div className="col-span-1 flex flex-col items-center justify-center text-light">
+        <div className="col-span-1 mx-auto flex flex-col items-start justify-center text-light">
           <h2 className="mb-8 font-medium">Contactame</h2>
           <ul>
             <li className="my-3">11-3344-9591</li>
@@ -41,7 +42,7 @@ const Footer = () => {
                 <InstagramIcon />
               </div>
             </li>
-            <li className="my-3">rominagquiroga@gmail.com</li>
+            <RoquiArtLogo />
           </ul>
         </div>
       </menu>
