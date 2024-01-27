@@ -1,7 +1,7 @@
 import { InstagramIcon, PinterestIcon } from "@/assets/Icons";
 import React from "react";
 import Newsletter from "./Newsletter";
-import RoquiArtLogo from "../Header/RoquiArtLogo";
+import RoquiArtLogo from "../RoquiArtLogo/RoquiArtLogo";
 
 const Footer = () => {
   return (

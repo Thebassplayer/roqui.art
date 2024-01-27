@@ -1,7 +1,7 @@
 import React from "react";
-import RoquiArtLogo from "./RoquiArtLogo";
+import RoquiArtLogo from "../RoquiArtLogo/RoquiArtLogo";
 
-const Header = () => {
+const HomeHeader = () => {
   return (
     <div className="sticky top-0 flex h-[6rem] w-full justify-center bg-lightBlue">
       <RoquiArtLogo />
@@ -9,4 +9,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HomeHeader;
