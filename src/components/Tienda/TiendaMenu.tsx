@@ -8,9 +8,6 @@ const TiendaMenuButtons = [
     text: "Ceramica",
   },
   {
-    text: "Encarga tu obra",
-  },
-  {
     text: "Marcos",
   },
   {

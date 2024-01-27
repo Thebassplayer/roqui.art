@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HomeMenuButtons = [
@@ -15,7 +16,7 @@ const HomeMenuButtons = [
   },
   {
     title: "Productos Disponibles",
-    link: "/productos",
+    link: "/tienda",
   },
   {
     title: "Contacto",
@@ -28,9 +29,9 @@ const HomeMenu = () => {
     <div className="flex w-full flex-row justify-evenly">
       {HomeMenuButtons.map((button, index) => {
         return (
-          <button key={index} className="p-6 uppercase">
+          <Link href={button.link} key={index} className="p-6 uppercase">
             {button.title}
-          </button>
+          </Link>
         );
       })}
     </div>
