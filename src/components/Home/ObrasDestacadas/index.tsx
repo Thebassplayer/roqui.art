@@ -1,11 +1,7 @@
 "use client";
+import { Obra } from "@/types";
 import { CldImage } from "next-cloudinary";
 import React from "react";
-
-type Obra = {
-  publicId: string;
-  alt: string;
-};
 
 const ObrasDestacadasImages: Obra[] = [
   {
@@ -27,17 +23,17 @@ const ObrasDestacadas = () => {
     <section className="w-full">
       <h1 className="text-center uppercase md:py-10">Destacadas</h1>
       <div className="grid h-full w-full grid-cols-3 justify-evenly">
-        {ObrasDestacadasImages.map((image) => {
+        {ObrasDestacadasImages.map((obra) => {
           return (
             <figure
-              key={image.publicId}
+              key={obra.publicId}
               className="mx-auto flex h-full w-full items-center justify-center md:py-10"
             >
               <CldImage
                 width="600"
                 height="600"
-                src={image.publicId}
-                alt={image.alt}
+                src={obra.publicId}
+                alt={obra.alt}
                 crop="pad"
                 sizes="100vw"
               />
