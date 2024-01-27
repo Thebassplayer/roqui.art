@@ -2,15 +2,15 @@
 import { CldImage } from "next-cloudinary";
 
 type SliderImageProps = {
-  PublicId: string;
+  publicId: string;
 };
 
-const SliderImage = ({ PublicId }: SliderImageProps) => {
+const SliderImage = ({ publicId }: SliderImageProps) => {
   return (
     <CldImage
       width="600"
       height="600"
-      src={PublicId}
+      src={publicId}
       alt="Roy and Raul"
       crop="pad"
       sizes="100vw"
