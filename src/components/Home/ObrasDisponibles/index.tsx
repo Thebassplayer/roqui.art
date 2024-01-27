@@ -32,12 +32,15 @@ const ObrasDisponiblesImages: Obra[] = [
 
 const ObrasDisponibles = () => {
   return (
-    <section className="my-10 w-full">
+    <section className="my-10 flex w-full flex-col items-center justify-center">
       <h1 className="text-center uppercase md:py-10">Obras Disponibles</h1>
       <div className="grid h-full w-full grid-rows-2 justify-evenly  gap-6 md:grid-cols-3 lg:grid-cols-4">
         {ObrasDisponiblesImages.map((obra) => (
           <ObraCard obra={obra} key={obra.publicId} />
         ))}
+      </div>
+      <div className="flex h-[66px] w-[66px] items-center justify-center rounded-full bg-[#F5CFDE]">
+        <span className="m-0 p-0 text-5xl text-white">+</span>
       </div>
     </section>
   );
