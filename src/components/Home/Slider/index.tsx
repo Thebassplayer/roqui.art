@@ -57,7 +57,7 @@ const Slider: React.FC<SliderProps> = ({ velocity = 2000 }) => {
         <h2 className="max-w-md text-4xl">ART</h2>
       </div>
       <div className="flex w-full flex-none flex-col items-center justify-center space-y-4">
-        <SliderImage PublicId={SliderImages[0]} />
+        <SliderImage publicId={SliderImages[0]} />
       </div>
     </div>
   );
