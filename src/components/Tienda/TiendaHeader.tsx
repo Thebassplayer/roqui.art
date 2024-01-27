@@ -3,7 +3,7 @@ import RoquiArtLogo from "../RoquiArtLogo/RoquiArtLogo";
 
 const TiendaHeader = () => {
   return (
-    <div className="sticky top-0 grid h-[6rem] w-full grid-cols-3 items-center justify-center bg-lightBlue">
+    <div className="sticky top-0 z-50 grid h-[6rem] w-full grid-cols-3 items-center justify-center bg-lightBlue">
       <RoquiArtLogo />
       <div className="flex rounded-full bg-light">
         <input
