@@ -7,10 +7,10 @@ type ObraCardProps = {
 
 const ObraCard = ({ obra }: ObraCardProps) => {
   return (
-    <div>
+    <div className="flow fle-col mx-auto w-[378px] items-center justify-center border border-solid border-[#B3CCDF] pb-10">
       <figure
         key={obra.publicId}
-        className="mx-auto flex h-full w-full items-center justify-center md:py-10"
+        className="mx-auto flex items-center justify-center md:py-10"
       >
         <CldImage
           width="286"
@@ -20,6 +20,8 @@ const ObraCard = ({ obra }: ObraCardProps) => {
           crop="pad"
         />
       </figure>
+      <h2 className="text-center">Abstracto 100 x 50 cm</h2>
+      <h3 className="text-center">$1000</h3>
     </div>
   );
 };

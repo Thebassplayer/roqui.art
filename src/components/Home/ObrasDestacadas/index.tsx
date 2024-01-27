@@ -20,7 +20,7 @@ const ObrasDestacadasImages: Obra[] = [
 
 const ObrasDestacadas = () => {
   return (
-    <section className="w-full">
+    <section className="my-10 w-full">
       <h1 className="text-center uppercase md:py-10">Destacadas</h1>
       <div className="grid h-full w-full grid-cols-3 justify-evenly">
         {ObrasDestacadasImages.map((obra) => {
