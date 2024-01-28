@@ -7,7 +7,7 @@ type ObraCardProps = {
 
 const ObraCard = ({ obra }: ObraCardProps) => {
   return (
-    <div className="flow fle-col mx-auto w-[378px] items-center justify-center border border-solid border-[#B3CCDF] pb-10">
+    <div className="flow fle-col mx-auto w-[378px] items-center justify-center border border-solid border-lightBlue pb-10">
       <figure
         key={obra.publicId}
         className="mx-auto flex items-center justify-center md:py-10"
