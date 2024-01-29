@@ -2,28 +2,59 @@
 import { CldImage } from "next-cloudinary";
 
 const obra = {
-  publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
-  alt: "Obra",
+  name: "Laberinto Rosa",
+  year: "2023",
+  material: "Acrílico sobre tela",
+  size: "153 x 90 cm",
+  price: "150000",
+  images: {
+    main: {
+      publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
+      alt: "Obra",
+    },
+    all: [
+      {
+        publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
+        alt: "Obra",
+      },
+      {
+        publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
+        alt: "Obra",
+      },
+      {
+        publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
+        alt: "Obra",
+      },
+      {
+        publicId: "roqui_art/artworks/obras/obra_1/ft5trxizsamw6exwegmo",
+        alt: "Obra",
+      },
+    ],
+  },
 };
 
 const Obra = () => {
+  const { main, all } = obra.images;
   return (
-    <div className="-z-10 my-10 grid grid-cols-4 grid-rows-3 gap-10 px-10">
+    <div className="grid grid-cols-4 grid-rows-3 gap-40 p-40">
       <div className="center relative col-span-2 row-span-2 flex aspect-square h-full items-center justify-center">
-        <CldImage src={obra.publicId} sizes="100vw" alt={obra.alt} fill />
+        <CldImage src={main.publicId} sizes="100vw" alt={main.alt} fill />
       </div>
-      <div className="relative col-span-1 col-start-3 row-span-1 flex aspect-square items-center justify-center">
-        <CldImage fill src={obra.publicId} alt={obra.alt} crop="fill" />
-      </div>
-      <div className="relative col-span-1 col-start-4 row-span-1 flex aspect-square items-center justify-center">
-        <CldImage fill src={obra.publicId} alt={obra.alt} crop="fill" />
-      </div>
-      <div className="relative col-span-1 col-start-3 row-start-2 flex aspect-square items-center justify-center">
-        <CldImage fill src={obra.publicId} alt={obra.alt} crop="fill" />
-      </div>
-      <div className="relative col-span-1 col-start-4 row-start-2 flex aspect-square items-center justify-center">
-        <CldImage fill src={obra.publicId} alt={obra.alt} crop="fill" />
-      </div>
+      {all.map((artwork, index) => {
+        return (
+          <div
+            key={index}
+            className="relative col-span-1 row-span-1 flex aspect-square items-center justify-center"
+          >
+            <CldImage
+              fill
+              src={artwork.publicId}
+              alt={artwork.alt}
+              crop="fill"
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };

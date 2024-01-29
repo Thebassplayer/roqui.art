@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Pangolin } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Home/HomeHeader";
 import { cx } from "@/utils";
 import Footer from "@/components/Footer";
 
